@@ -1,0 +1,120 @@
+@import "screen.css";
+
+body {
+  font-size: 80.5%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#15), to(#666666), color-stop(.6,#333));
+}
+@font-face {
+    font-family: "Nevis";
+    src: url(nevis.ttf);
+}
+#header{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F1F1F1));
+  height: 100px;
+  border-bottom: 3px solid #91BD09;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+#main{
+  width: 70%;
+  background: white;
+  float: left;
+  margin-left: 8px;
+  -webkit-border-radius: 10px;
+}
+#quickbar{
+  background: gray;
+  margin-left: 72%;
+  margin-right: 10px;
+}
+.nevis{
+  font-family: "Nevis"; 
+  font-size: 30px;
+}
+.logo{
+  margin:0 auto;
+  width: 600px;
+  height: 100px;
+  font-size: 50px;
+  font-family: "Nevis";
+}
+.popup{
+  -webkit-box-sizing: content-box;
+  -webkit-border-radius: 5px;
+  border:5px solid #91BD09;
+  margin:0 auto;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  background: white;
+}
+#loginbox{
+  position: absolute;
+  font-size: 18px;
+  width: 400px;
+  top: 100px;
+  left: 50%;
+  margin-left:-200px;
+  padding: 0px;
+}
+#loginbox form{
+  padding: 20px 20px 20px 20px;
+}
+.popup .header{
+  font-size: 25px;
+  display:block;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F1F1F1));
+  padding:10px 10px 5px 10px;
+  margin:0px;
+  border-bottom: 1px solid #D2D2D2;
+  color: #52595D;
+  text-shadow: rgba(255,255,255,0.9) 1px 1px 0px;
+}
+#loginbox label{
+  font-size: 16px;
+}
+#loginbox input[type="text"], #loginbox input[type="password"]{
+  width: 96%;
+}
+/* forms */
+input[type="text"], input[type="password"]{
+  border:1px solid #C7C7C7;
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,0.2);
+  font-size: 25px;
+  padding: 5px;
+  margin-left:0px;
+  margin-right: 0px;
+}
+input[type="submit"]{
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.2),1px 1px 0px rgba(0,0,0,0.2);
+  padding: 10px 35px 10px 35px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight:bold;
+}
+label{
+  color: #52595D;
+}
+input:hover[type="submit"]{
+  color: white;
+  opacity: 0.9;
+}
+input:active[type="submit"]{
+  top: 1px;
+  position:relative;
+}
+.green{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C4ED68), to(#91BD09));
+  border:1px solid #9ED54C;  
+}
+.red{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e62727), to(#f63737));
+  border: 1px solid #e62727;
+}
+.right{
+  text-align: right;
+}
+
+
