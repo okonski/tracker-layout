@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/layout.css" type="text/css" />  
   <script src="js/lib/modernizr-1.5.min.js"></script>
   <script src="js/jquery-1.5.min.js"></script>
+  <script src="js/jquery-ui-1.8.9.custom.min.js"></script>
   <script src="js/site.js"></script>
+  
 </head>
 <body>  
 <div id="header">
@@ -16,12 +18,18 @@
 </div>
 <div id="main">
   <div class="nav">
-    <ul class="tabs">
-      <li><a href="#">&#171; Back</a></li>
-      <li><a href="#" class="current">Tickets</a></li>
-      <li><a href="#">Milestones (2)</a></li>
-      <li><a href="#">Settings</a></li>
-      <li><a href="#">States (3)</a></li>
+    <ul id="menu" class="tabs">
+      <li><a href="javascript:void(0)">&#171; Back</a></li>
+      <li><a href="javascript:void(0)" class="current">Tickets</a></li>
+      <li>
+      <a href="javascript:void(0)" onclick="$('#menu').hide('slide', { direction: 'up' }, 200);$('.sub').delay(200).show('slide', { direction: 'left' }, 200);">Milestones (2)</a>
+      </li>
+      <li><a href="javascript:void(0)">Settings</a></li>
+      <li><a href="javascript:void(0)">States (3)</a></li>
+    </ul>
+    <ul class="tabs sub" style="display: none;">
+      <li><a onclick="$('.sub').hide('slide', { direction: 'left' }, 200);$('#menu').delay(200).show('slide', { direction: 'up' }, 200);" href="javascript:void(0)">&#171; Back</a></li>
+      <li><a>jakies submenu</a></li>
     </ul>
     <form class="search">
       <input type="text" style="font-size:13px" name="search" placeholder="Search..."/>
