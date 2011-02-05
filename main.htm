@@ -15,9 +15,34 @@
   <div class="nevis">track<span style="padding-left:5px;padding-right:5px;color:white;background: #91BD09">light</span></div>
 </div>
 <div id="main">
-  <div id="nav"></div>
+  <div class="nav">
+    <ul class="tabs">
+      <li><a href="#">&#171; Back</a></li>
+      <li><a href="#" class="current">Tickets</a></li>
+      <li><a href="#">Milestones (2)</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">States (3)</a></li>
+    </ul>
+    <form class="search">
+      <input type="text" style="font-size:13px" name="search" placeholder="Search..."/>
+    </form>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <p class="error" style="display: none;">Wystapily bledy przy zapisywaniu!</p>
+  <p>Testowe buttony:
+  <input type="submit" class="gray" value="Domyślny"/>
+  <input type="submit" class="gray" disabled="disabled" value="Nieaktywny"/>
+  <input type="submit" class="green" value="Zielony"/>
+  <input type="submit" class="green" disabled="disabled" value="Zielony Nieaktywny"/>
+  <input onclick="$('.error').slideToggle('fast');" type="submit" class="red" value="Pokaż błąd"/>
+  <input type="submit" class="red" disabled="disabled" value="Czerwony nieaktywny"/>
+  <br/><br/>
+  </p>
 </div>
-<div id="quickbar">prawo</div>
+<div id="quickbar">
+
+</div>
 </body>
 </html>
   
