@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('ul[sub]').prepend('<li><a class="back" href="javascript:void(0)">&laquo; Back</a></li>');
-  $('.clickable').each(function(){
+  $('ul.tabs a[sub]').each(function(){
     $(this).click(showSubMenu);
     $(this).append(" &raquo;");
   });
@@ -8,11 +8,17 @@ $(document).ready(function(){
 });
 
 function showSubMenu(){
-  $(this).parents('ul').hide('slide', { direction: 'up' }, 200);
-  $('ul.sub[sub="'+$(this).attr('sub')+'"]').delay(200).show('slide', { direction: 'left' }, 200);
+  var current = $(this).parents('ul');
+  var next = $('ul.sub[sub="'+$(this).attr('sub')+'"]');
+  current.animate({top: "-=50"}, 200);
+  next.css({top: '50px'}).show().animate({top: "-=50"},200);
 }
 
 function returnToParentMenu(){
-  $(this).parents('ul').hide('slide', { direction: 'up' }, 200);
-  $('a[sub="'+$(this).parents('ul').attr('sub')+'"]').parents('ul').delay(200).show('slide', { direction: 'left' }, 200);
+  var current = $(this).parents('ul');
+  var prev = $('a[sub="'+$(this).parents('ul').attr('sub')+'"]').parents('ul'); 
+  current.animate({top: "+=50"},200);
+  prev.css({top: "-50px"});
+  prev.animate({top: "+=50"},200);
+ 
 }

@@ -36,6 +36,7 @@ body {
 }
 .nav{
   width: 100%;
+  overflow: hidden;
   -webkit-box-sizing: content-box;
   background: #E1E1E1;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F1F1F1), to(#E1E1E1));
@@ -117,7 +118,7 @@ a{
 }
 /* tabs */
 ul.tabs{
-  
+  position: absolute;
   margin-top: 5px;
   
 }
