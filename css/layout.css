@@ -42,8 +42,8 @@ body {
   background: -moz-linear-gradient(top, #F1F1F1, #E1E1E1);
   height: 40px;
   border-bottom: 1px solid #D1D1D1;
+  position: relative;
   float: left;
-  
 }
 
 #quickbar{
@@ -117,9 +117,9 @@ a{
 }
 /* tabs */
 ul.tabs{
-  display: block;
-  float: left;
+  
   margin-top: 5px;
+  
 }
 ul.tabs li{
   list-style-type: none;
@@ -185,8 +185,9 @@ input[type="text"], input[type="password"]{
   margin-right: 0px;
 }
 form.search{
-  float: right;
-  margin-right: 10px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }
 form.search input[type="text"]{
   background-image: url(../icons/magnify.png);
